@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <meta name="description" content="A high-end grade calculator with dark mode and neon aesthetics.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <div class="container">
+        <header>
+            <h1>Grade <span class="neon-text">Calculator</span></h1>
+            <p>Plan your success. Calculate your destiny.</p>
+        </header>
+
+        <main>
+            <form id="gradeForm">
+                <div class="input-group">
+                    <label for="exam1">1st Exam (Vize)</label>
+                    <input type="number" id="exam1" min="0" max="100" placeholder="e.g. 75" required>
+                    <span class="error-msg">Enter 0-100</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="perf1">Performance 1</label>
+                    <input type="number" id="perf1" min="0" max="100" placeholder="e.g. 90" required>
+                    <span class="error-msg">Enter 0-100</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="perf2">Performance 2</label>
+                    <input type="number" id="perf2" min="0" max="100" placeholder="e.g. 85" required>
+                    <span class="error-msg">Enter 0-100</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="target">Target Average</label>
+                    <input type="number" id="target" min="0" max="100" placeholder="e.g. 60" required>
+                    <span class="error-msg">Enter 0-100</span>
+                </div>
+
+                <!-- Live calculation happens, but button triggers explicit view if needed or serves as specific action -->
+                <!-- We will make it auto-calculate mostly, but a button is good for specific mobile UX -->
+            </form>
+
+            <section id="result-section" class="result-card hidden">
+                <div class="result-content">
+                    <h2 id="result-title">Calculating...</h2>
+                    <p id="result-message">Enter your grades to see the path.</p>
+                    <div class="score-display" id="score-needed">--</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Designed for excellence.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
