@@ -37,9 +37,3 @@ A modern, dark-themed web application designed to help students calculate the ex
 * **JavaScript (ES6+)** (DOM Manipulation, Logic)
 
 ---
-
-## 🚀 How to Run (Nasıl Çalıştırılır?)
-
-1. Clone or download this repository.
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/grade-calculator.git](https://github.com/YOUR_USERNAME/grade-calculator.git)
