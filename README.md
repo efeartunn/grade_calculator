@@ -1,4 +1,4 @@
-# 🎓 Grade Calculator / Not Hesaplayıcı
+# Grade Calculator / Not Hesaplayıcı
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success) ![License](https://img.shields.io/badge/License-MIT-blue)
 
